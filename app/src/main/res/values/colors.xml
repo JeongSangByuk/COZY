@@ -3,4 +3,26 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="firstButtonColor">#bbdbf9</color>
+    <color name="secondButtonColor">#91cafe</color>
+    <color name="thirdButtonColor">#63b3fe</color>
+    <color name="fourthButtonColor">#349cfc</color>
+    <color name="mainColor">#5776ff</color>
+    <color name="backgroundColor">#e2e2e2</color>
+
+    <color name="transparent">#1A000000</color>
+    <!--
+    투명도
+    100% — FF
+    90% — E6
+    80% — CC
+    70% — B3
+    60% — 99
+    50% — 80
+    40% — 66
+    30% — 4D
+    20% — 33
+    10% — 1A
+    0% — 00
+    -->
 </resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mikeButtonConnerValue">70dp</dimen>
+    <dimen name="mikeButton2ConnerValue">10dp</dimen>
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="corona_information_button_stroke">2dp</dimen>
+
+</resources>
