@@ -29,7 +29,10 @@ public class ChatBot extends AsyncTask<String, String, String> {
             // JSONObject를 만들고 key value 형식으로 값을 저장해준다.
             JSONObject jsonObject = new JSONObject();
 
-            jsonObject.accumulate("input_sentence", "오늘 확진자 수 알려줘");   // 사용자 대화 문장
+            Log.d("!!!!!","3"+"   "+urls[3]);
+            Log.d("!!!!!","1"+"   "+urls[1]);
+
+            jsonObject.accumulate("input_sentence", urls[3]);   // 사용자 대화 문장
             jsonObject.accumulate("chatbot_id", "f646de27-3776-4d09-9a3d-257bb5b86b2b");
 
             HttpURLConnection con = null;
@@ -39,8 +42,7 @@ public class ChatBot extends AsyncTask<String, String, String> {
 
                 Log.d("!!!!!","try2");
 
-                //URL url = new URL(urls[0]);
-                URL url = new URL("https://danbee.ai/chatflow/engine.do");
+                URL url = new URL(urls[1]);
 
                 // 연결을 함
 
@@ -90,7 +92,7 @@ public class ChatBot extends AsyncTask<String, String, String> {
 
                 }
 
-                return buffer.toString();   // 서버로 부터 받은 값을 리턴해줌 아마 OK!!가 들어올것임
+                return buffer.toString();   // 서버로 부터 받은 값을 리턴해줌
 
             } catch (MalformedURLException e) {
 

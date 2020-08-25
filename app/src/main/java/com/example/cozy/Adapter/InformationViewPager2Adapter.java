@@ -17,6 +17,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.cozy.Activity.MainActivity;
 import com.example.cozy.R;
 
 public class InformationViewPager2Adapter extends RecyclerView.Adapter<InformationViewPager2Adapter.ViewHolder> {
@@ -24,6 +25,12 @@ public class InformationViewPager2Adapter extends RecyclerView.Adapter<Informati
     private View view;
     private Context context;
     private LayoutInflater layoutInflater;
+    public MainActivity mainActivity;
+    ;
+
+    public InformationViewPager2Adapter(MainActivity mainActivity) {
+        this.mainActivity = mainActivity;
+    }
 
     @NonNull
     @Override
@@ -32,9 +39,9 @@ public class InformationViewPager2Adapter extends RecyclerView.Adapter<Informati
         context = parent.getContext();
         layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-        switch (viewType){
+        switch (viewType) {
 
-            case 0 :
+            case 0:
                 view = layoutInflater.inflate(R.layout.view_pager_information_first, parent, false);
                 setFirstInformationViewPager();
                 break;
@@ -45,10 +52,6 @@ public class InformationViewPager2Adapter extends RecyclerView.Adapter<Informati
 
             case 2:
                 view = layoutInflater.inflate(R.layout.view_pager_information_third, parent, false);
-                break;
-
-            default:
-                view = layoutInflater.inflate(R.layout.view_pager_information_fourth, parent, false);
                 break;
 
             case 3:
@@ -64,14 +67,16 @@ public class InformationViewPager2Adapter extends RecyclerView.Adapter<Informati
                 break;
 
         }
+
         return new ViewHolder(view);
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onBindViewHolder(@NonNull InformationViewPager2Adapter.ViewHolder holder, int position) {
-
     }
+
 
     @Override
     public int getItemViewType(int position) {
@@ -83,19 +88,20 @@ public class InformationViewPager2Adapter extends RecyclerView.Adapter<Informati
         return 6;
     }
 
-    public void setFirstInformationViewPager(){
+    public void setFirstInformationViewPager() {
         TextView textView = view.findViewById(R.id.title_first_information_view_pager);
 
-        Spannable span = (Spannable)textView.getText();
-        span.setSpan(new RelativeSizeSpan(1.5f),textView.getText().toString().indexOf("\n") +1
-                ,textView.getText().toString().indexOf("\n")+4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        Spannable span = (Spannable) textView.getText();
+        span.setSpan(new RelativeSizeSpan(1.5f), textView.getText().toString().indexOf("\n") + 1
+                , textView.getText().toString().indexOf("\n") + 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         span.setSpan(new ForegroundColorSpan(context.getResources().getColor(R.color.newbackgroundorangecolor)),
-                textView.getText().toString().indexOf("C"),textView.getText().toString().indexOf("C") + 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                textView.getText().toString().indexOf("C"), textView.getText().toString().indexOf("C") + 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
     }
 
-    class ViewHolder extends RecyclerView.ViewHolder{
+    class ViewHolder extends RecyclerView.ViewHolder {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
         }
     }
 }

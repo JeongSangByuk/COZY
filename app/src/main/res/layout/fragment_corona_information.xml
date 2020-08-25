@@ -31,7 +31,7 @@
             android:layout_marginTop="10dp"
             android:foreground="?selectableItemBackground"
             android:background="#ffffff"
-            android:onClick="gotToBackStage"
+            android:onClick="goToBackStage"
             android:scaleType="fitCenter"
             android:src="@drawable/back1" />
 

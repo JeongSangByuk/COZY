@@ -20,6 +20,7 @@
     </LinearLayout>
 
     <FrameLayout
+        android:id="@+id/framelayout_in_main"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
@@ -41,20 +42,7 @@
             android:src="@drawable/main_mike1"
             android:text="마이크" />
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/mike_stt_animation"
-            android:layout_width="400dp"
-            android:layout_height="400dp"
-
-            app:lottie_imageAssetsFolder="images"
-            android:visibility="invisible"
-            app:lottie_speed="2"
-            android:layout_gravity="center"
-            app:lottie_fileName="test8.json"
-            app:lottie_loop="true"/>
-
     </FrameLayout>
-
 
     <LinearLayout
         android:id="@+id/current"

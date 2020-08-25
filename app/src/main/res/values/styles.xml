@@ -28,5 +28,10 @@
         <item name="android:backgroundDimEnabled">true</item>
     </style>
 
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/exit_to_bottom</item>
+    </style>
+
 
 </resources>

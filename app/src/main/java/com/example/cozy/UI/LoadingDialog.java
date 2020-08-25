@@ -4,8 +4,6 @@ package com.example.cozy.UI;
 import android.app.ProgressDialog;
 import android.content.Context;
 
-import com.example.cozy.fragment.ComparisionMovingLineFragment;
-
 public class LoadingDialog {
 
     public static ProgressDialog loadingDialog = null;

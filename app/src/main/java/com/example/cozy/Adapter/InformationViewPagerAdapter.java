@@ -61,7 +61,7 @@ public class InformationViewPagerAdapter extends PagerAdapter {
 
             case 4:
                 view = layoutInflater.inflate(R.layout.view_pager_information_fifth, container, false);
-                break;
+                 break;
 
             case 5:
                 view = layoutInflater.inflate(R.layout.view_pager_information_sixth, container, false);

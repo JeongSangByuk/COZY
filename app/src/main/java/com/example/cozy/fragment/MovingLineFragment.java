@@ -1,4 +1,4 @@
-package com.example.cozy.fragment;
+package com.example.cozy.Fragment;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;

@@ -1,4 +1,4 @@
-package com.example.cozy.fragment;
+package com.example.cozy.Fragment;
 
 import android.app.Activity;
 import android.content.Context;
@@ -23,7 +23,6 @@ import com.example.cozy.Constant;
 import com.example.cozy.Inferface.OnBackPressedListener;
 import com.example.cozy.Server.Get;
 import com.example.cozy.R;
-import com.example.cozy.Server.Post;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
@@ -31,14 +30,12 @@ import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.DefaultValueFormatter;
 import com.github.mikephil.charting.formatter.PercentFormatter;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.ExecutionException;
 
 public class CoronaInformationFragment extends Fragment  {
@@ -274,5 +271,4 @@ public class CoronaInformationFragment extends Fragment  {
 
         pieChart.setData(data);
     }
-
 }

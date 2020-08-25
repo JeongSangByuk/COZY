@@ -6,15 +6,7 @@
     android:background="@drawable/adrress_dialog"
     android:orientation="vertical">
 
-    <!-- <androidx.viewpager.widget.ViewPager
-         android:id="@+id/informationViewPager"
-         android:layout_width="match_parent"
-         android:layout_height="0dp"
-         android:layout_weight="9">
-
-     </androidx.viewpager.widget.ViewPager>-->
-
-    <androidx.viewpager2.widget.ViewPager2
+ <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/informationViewPager"
         android:layout_width="match_parent"
         android:layout_height="0dp"

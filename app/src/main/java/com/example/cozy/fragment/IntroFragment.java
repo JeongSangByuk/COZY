@@ -1,25 +1,23 @@
-package com.example.cozy.fragment;
+package com.example.cozy.Fragment;
 
-import android.annotation.SuppressLint;
-import android.graphics.Color;
-import android.icu.text.IDNA;
-import android.media.Image;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.Spannable;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
-import android.util.Log;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.example.cozy.Adapter.IntroViewPagerAdapter;
 import com.example.cozy.Constant;
@@ -52,12 +50,16 @@ public class IntroFragment extends Fragment {
     public float[] infecteeNumber;
 
     private int currentPage = 0;
-    private Timer timer;
+    private Handler handler;
+    private Runnable update;
+    public Timer timer;
     //delay in milliseconds before task is to be executed
     private final long DELAY_MS = 500;
     // time in milliseconds between successive task executions.
     private final long PERIOD_MS = 3000;
+
     private MainActivity mainActivity;
+
 
     public IntroFragment(MainActivity mainActivity) {
 
@@ -101,8 +103,8 @@ public class IntroFragment extends Fragment {
         CircleIndicator circleIndicator = (CircleIndicator) view.findViewById(R.id.indicator);
         circleIndicator.setupWithViewPager(viewPager);
 
-        final Handler handler = new Handler();
-        final Runnable Update = new Runnable() {
+        handler = new Handler();
+        update = new Runnable() {
             @Override
             public void run() {
                 if (currentPage == 3) {
@@ -112,13 +114,7 @@ public class IntroFragment extends Fragment {
             }
         };
 
-        timer = new Timer();
-        timer.schedule(new TimerTask() {
-            @Override
-            public void run() {
-                handler.post(Update);
-            }
-        }, DELAY_MS, PERIOD_MS);
+        restartViewPager();
 
         final TextView coronaTextView = view.findViewById(R.id.coronaInformationView);
         coronaTextView.setOnClickListener(new View.OnClickListener() {
@@ -146,7 +142,16 @@ public class IntroFragment extends Fragment {
                 mainActivity.comparisionMovingLineButton(comparisionmovingLineTextView);
             }
         });
+    }
 
+    public void restartViewPager(){
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(update);
+            }
+        }, DELAY_MS, PERIOD_MS);
 
     }
 
@@ -200,8 +205,17 @@ public class IntroFragment extends Fragment {
     }
 
     public void getInformation(View view){
+        timer.cancel();
         InformationDialog informationDialog = new InformationDialog(getActivity());
         informationDialog.makeInformationDialog();
+
+        informationDialog.dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+            @Override
+            public void onDismiss(DialogInterface dialogInterface) {
+                mainActivity.ttsClient.stop();
+                restartViewPager();
+            }
+        });
     }
 
 }
