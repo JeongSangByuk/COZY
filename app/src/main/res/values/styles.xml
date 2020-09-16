@@ -1,11 +1,12 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
 
         <item name="windowNoTitle">true</item>>
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorPrimary">@color/newbackgroundcolor</item>
+        <item name="colorPrimaryDark">#0f4c75</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
@@ -26,5 +27,11 @@
         -->
         <item name="android:backgroundDimEnabled">true</item>
     </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/enter_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/exit_to_bottom</item>
+    </style>
+
 
 </resources>

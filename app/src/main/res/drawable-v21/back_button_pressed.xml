@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#e2e2e2"></solid>
+        </shape>
+
+    </item>
+
+    <item android:state_pressed="false">
+
+        <shape>
+            <solid android:color="#ffffff"></solid>
+        </shape>
+    </item>
+
+    <item>
+        <ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#000000">
+            <!-- Background가 될 Item, 단순한 Rectangle Shape를 예시로 했다 -->
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+        </ripple>
+
+    </item>
+
+</selector>

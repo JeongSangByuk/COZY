@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    android:background="@drawable/adrress_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="확진자 동선 정보"
+        android:textColor="#5776ff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/movingLineListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:divider="#ffffff"
+        android:layout_marginBottom="15dp"/>
+
+
+</LinearLayout>

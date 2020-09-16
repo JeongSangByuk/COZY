@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/firstViewPagerImageViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/slide_image1"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/firstViewPagerTextViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="오늘의 확진자\n36명\n20-08-05기준"
+        android:textSize="32dp"
+        android:textColor="#ffffff"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:bufferType="spannable"
+        android:fontFamily="@font/nanumsquareeb"
+        android:gravity="start"
+        ></TextView>
+
+</FrameLayout>

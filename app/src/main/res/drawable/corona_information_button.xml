@@ -9,6 +9,6 @@
     </corners>
     <stroke
         android:width="2dp"
-        android:color="@color/backgroundColor"/>
+        android:color="@color/newbackgroundcolor"/>
 
 </shape>

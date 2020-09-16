@@ -1,75 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/button2"
     android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
     android:layout_marginRight="20dp"
     android:layout_marginBottom="20dp"
-    android:layout_marginTop="20dp"
-    >
+    android:background="@drawable/button2"
+    android:orientation="vertical">
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:text="확진자 동선"
-        android:textColor="#5776ff"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:padding="10dp"/>
+        android:layout_weight="1">
 
-    <Button
-        android:id="@+id/firstButtonClickInMovingLine"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|top"
+            android:padding="13dp"
+            android:text="확진자 동선"
+            android:textColor="@color/newbackgroundcolor"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+
+            android:background="@color/transparent"
+            android:onClick="goToBackStage"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back1" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/adrressButtonListView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        android:background="@drawable/button2"
-        android:gravity="center|center_vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:text="내 집(서울시 광진구)의 확진자 경로 보기"
-        android:textSize="30dp"
-        android:onClick="fistButtonClickInMovingLine"
-        />
+        android:layout_marginBottom="5dp"
+        android:layout_weight="5"
+        android:divider="#ffffff">
 
-
-    <Button
-        android:id="@+id/secondButtonClickInMovingLine"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        android:background="@drawable/button2"
-        android:gravity="center|center_vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:text="내 주소 저장하기"
-        android:textSize="30dp" />
-
-
-    <Button
-        android:id="@+id/thirdButtonClickInMovingLine"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_weight="1"
-        android:background="@drawable/button2"
-        android:gravity="center|center_vertical"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:text="내 주소 저장하기"
-        android:textSize="30dp" />
-
-
+    </ListView>
 </LinearLayout>

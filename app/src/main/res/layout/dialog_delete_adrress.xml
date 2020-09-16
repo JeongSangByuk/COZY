@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:background="@drawable/adrress_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/DeleteAdrress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:text="내 주소 삭제"
+        android:textColor="#5776ff"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DeleteAdrressText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp"
+        android:text="우리집 주소를 삭제하시겠습니까?"
+        android:textSize="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/DeleteRegisterAdrressButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="삭제하기"
+            android:textColor="#ff0000"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/CancleDeleteAdrressButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="취소하기"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

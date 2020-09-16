@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:fontFamily="@font/nanumsquarer"
+        android:gravity="bottom"
+        android:paddingLeft="25dp"
+        android:text="'동선 비교' 메뉴 이용"
+        android:textColor="@color/newbackgroundorangecolor"
+
+        android:textSize="24dp" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+
+        android:paddingLeft="12dp"
+        android:paddingTop="20dp"
+        android:paddingRight="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/info2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+
+        android:fontFamily="@font/nanumsquarer"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:text="내 위치와 코로나19 확진자 동선을\n편리하게 비교해보세요."
+        android:textColor="@color/black"
+
+        android:textSize="20dp" />
+
+</LinearLayout>

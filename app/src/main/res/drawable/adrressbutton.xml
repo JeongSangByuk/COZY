@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:padding = "10dp"
+    >
+    <solid android:color="#ffffff"></solid>
+    <corners
+        android:topLeftRadius="@dimen/mikeButton2ConnerValue"
+        android:topRightRadius="@dimen/mikeButton2ConnerValue"
+        android:bottomLeftRadius="@dimen/mikeButton2ConnerValue"
+        android:bottomRightRadius="@dimen/mikeButton2ConnerValue">
+    </corners>
+
+    <stroke
+        android:width="4dp"
+        android:color="@color/backgroundColor"
+        android:dashWidth="4dp"
+        android:dashGap="4dp" />
+
+</shape>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+
+        android:paddingTop="80dp"
+        android:paddingLeft="15dp"
+
+        android:text="환영합니다!"
+        android:textSize="25dp"
+        android:fontFamily="@font/nanumsquarer"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/title_first_information_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+
+        android:paddingLeft="15dp"
+        android:bufferType="spannable"
+
+        android:text="COZY 어플리케이션 사용\n가이드"
+        android:textSize="25dp"
+        android:fontFamily="@font/nanumsquarer"
+        android:textColor="@color/black"
+        />
+
+
+
+</LinearLayout>

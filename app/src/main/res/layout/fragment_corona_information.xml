@@ -9,16 +9,34 @@
     android:background="@drawable/button2"
     android:orientation="vertical">
 
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.2"
+        android:layout_weight="1.2">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center"
         android:padding="10dp"
         android:text="코로나 정보"
-        android:textColor="#5776ff"
+        android:fontFamily="@font/nanumsquarer"
+        android:textColor="@color/newbackgroundcolor"
         android:textSize="30dp"
         android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:foreground="?selectableItemBackground"
+            android:background="#ffffff"
+            android:onClick="goToBackStage"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back1" />
+
+    </FrameLayout>
+
 
     <TextView
         android:id="@+id/liveDate"
@@ -26,7 +44,9 @@
         android:layout_height="0dp"
         android:layout_weight="0.3"
         android:paddingLeft="30dp"
-        android:textSize="10dp"/>
+        android:textSize="10dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanumsquarer"/>
 
     <TextView
         android:id="@+id/upTextView"
@@ -39,7 +59,9 @@
         android:bufferType="spannable"
         android:gravity="center_horizontal|center_vertical"
         android:textAllCaps="false"
-        android:textSize="20dp" />
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/nanumsquarer"/>
 
 
     <TextView
@@ -52,7 +74,9 @@
         android:background="@drawable/corona_information_down_side_button"
         android:bufferType="spannable"
         android:gravity="center_horizontal|center_vertical"
-        android:textSize="20dp">
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:fontFamily="@font/nanumsquarer">
 
     </TextView>
 
@@ -73,14 +97,15 @@
                 android:layout_weight="1"
                 android:gravity="center"
 
-                android:text="일일 확진자 추세"
-                android:textColor="#5776ff"
+                android:text="지역별 확진자 발생 비율"
+                android:fontFamily="@font/nanumsquarer"
+                android:textColor="@color/newbackgroundcolor"
                 android:textSize="15dp">
 
             </TextView>
 
-            <com.github.mikephil.charting.charts.BarChart
-                android:id="@+id/chart"
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/piechart"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginLeft="20dp"
@@ -88,8 +113,9 @@
                 android:layout_marginBottom="20dp"
                 android:layout_weight="4"
                 android:background="#ffffff"
+                android:fontFamily="@font/nanumsquarer">
+            </com.github.mikephil.charting.charts.PieChart>
 
-                />
         </LinearLayout>
     </LinearLayout>
 

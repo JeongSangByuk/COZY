@@ -6,5 +6,6 @@
     <dimen name="fragment_vertical_margin">16dp</dimen>
     <dimen name="corona_information_button_stroke">2dp</dimen>
     <dimen name="adrressDialogConnerValue">20dp</dimen>
+    <dimen name="introButtonConnerValue">20dp</dimen>
 
 </resources>

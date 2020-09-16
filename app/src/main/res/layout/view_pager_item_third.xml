@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/viewPagerImageViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/slide_image3"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/viewPagerTextViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|right"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:text="대한민국엔 \n위기극복의 DNA가 있습니다."
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nanumsquareeb"
+
+        ></TextView>
+
+
+
+</FrameLayout>

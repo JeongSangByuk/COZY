@@ -14,7 +14,7 @@
                 android:bottomRightRadius="@dimen/mikeButton2ConnerValue"></corners>
             <stroke
                 android:width="2dp"
-                android:color="@color/backgroundColor" />
+                android:color="@color/newbackgroundcolor" />
         </shape>
     </item>
 </layer-list>

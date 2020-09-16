@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/secondViewPagerImageViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/slide_image2"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/secondViewPagerTextViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="일일 확진자\n현황"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:bufferType="spannable"
+        android:fontFamily="@font/nanumsquareeb"
+        android:gravity="start"
+        ></TextView>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chartInIntro"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="right|bottom"
+        />
+
+</FrameLayout>

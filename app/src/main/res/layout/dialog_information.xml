@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    android:background="@drawable/adrress_dialog"
+    android:orientation="vertical">
+
+ <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/informationViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/indicatorInformationDialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="1"
+
+        app:ci_width="5dp"
+        app:ci_height="5dp"
+        app:ci_margin="4dp"
+        app:ci_drawable="@color/white"
+        app:ci_drawable_unselected="@color/newbackgroundorangecolor"/>
+
+
+  <!--      app:p_defaultColor="@color/white"
+        app:p_gap="4dp"
+        app:p_radius="5dp"
+        app:p_selectedColor="@color/newbackgroundorangecolor"
+        app:p_strokeColor="@color/newbackgroundorangecolor"
+        app:p_strokeWidth="1dp" />-->
+
+</LinearLayout>

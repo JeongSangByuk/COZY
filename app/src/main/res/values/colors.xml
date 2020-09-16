@@ -9,20 +9,12 @@
     <color name="fourthButtonColor">#349cfc</color>
     <color name="mainColor">#5776ff</color>
     <color name="backgroundColor">#e2e2e2</color>
+    <color name="mainBackgroundColor">#f9f9f9</color>
+    <color name="newbackgroundcolor">#0f4c75</color>
+    <color name="newbackgroundorangecolor">#f4b183</color>
 
-    <color name="transparent">#1A000000</color>
-    <!--
-    투명도
-    100% — FF
-    90% — E6
-    80% — CC
-    70% — B3
-    60% — 99
-    50% — 80
-    40% — 66
-    30% — 4D
-    20% — 33
-    10% — 1A
-    0% — 00
-    -->
+    <color name ="checkbox_active">#000000</color>
+    <color name="checkbox_inactive">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
 </resources>

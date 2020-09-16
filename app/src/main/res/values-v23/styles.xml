@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <item name="windowNoTitle">true</item>>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorPrimary">@color/newbackgroundcolor</item>
+        <item name="colorPrimaryDark">#0f4c75</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

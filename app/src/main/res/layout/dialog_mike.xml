@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:background="@drawable/mike_background"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bar_mike_dialog" />
+
+    <TextView
+        android:id="@+id/mike_textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:fontFamily="@font/nanumsquarer"
+        android:gravity="top|center"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+
+        android:lineSpacingExtra="7dp"
+        android:text="안녕하세요. 지금 듣고있어요!\nCOZY 에게 말해보세요!"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_vertical|center_horizontal">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/mike_stt_animation"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:paddingBottom="30dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible"
+            app:lottie_fileName="test8.json"
+            app:lottie_imageAssetsFolder="images"
+            app:lottie_loop="true"
+            app:lottie_speed="2" />
+
+        <ImageButton
+            android:id="@+id/mike_dialog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|center"
+            android:adjustViewBounds="true"
+            android:background="#00000000"
+
+            android:layout_margin="7dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/main_mike_in_sst"
+            android:text="마이크" />
+    </FrameLayout>
+
+</LinearLayout>

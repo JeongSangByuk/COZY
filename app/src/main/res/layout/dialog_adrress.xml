@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="350dp"
-    android:layout_height="250dp"
+    android:layout_height="350dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/adrress_dialog"
     android:orientation="vertical">
@@ -9,13 +9,26 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="0.8"
         android:text="주소 등록하기"
         android:textColor="#5776ff"
         android:paddingTop="10dp"
         android:paddingLeft="15dp"
         android:textSize="25dp"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adrress_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.5"
+        android:paddingBottom="10dp"
+        android:hint="주소 이름 지정"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:textColorHint="@android:color/darker_gray" />
 
     <Spinner
         android:id="@+id/adrress_dialog_spinner"
@@ -47,8 +60,10 @@
             android:id="@+id/registerButton"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:enabled="false"
             android:layout_weight="1"
             android:textSize="20dp"
+            android:layout_marginTop="20dp"
             style="?android:attr/borderlessButtonStyle"
             android:text="등록하기" />
 
@@ -57,6 +72,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_marginTop="20dp"
             style="?android:attr/borderlessButtonStyle"
             android:textSize="20dp"
             android:text="취소하기" />
