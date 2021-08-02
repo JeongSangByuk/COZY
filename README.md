@@ -1,6 +1,6 @@
 # 👼 COZY(코로나 지팡이)
 <img src = "https://img.shields.io/badge/ProjectType-TeamProject-orange?style=flat-square">  <img src = "https://img.shields.io/badge/Tools-AndroidStudio-brightgreen?style=flat-square&logo=AndroidStudio"> <img src = "https://img.shields.io/badge/Language-Java-critical?style=flat-square&logo=Java">
-> 모바일 AI 음성 비스 서비스 'COZY'<br>
+> 모바일 AI 음성 비서 서비스 'COZY'<br>
 > 시각 장애인을 위한 코로나 정보 제공 어플리케이션
 
 <p align="center"> <img src = "https://user-images.githubusercontent.com/64072741/126885375-231e8ed5-8bff-4c77-813a-141973dcc4ae.jpg"> </p><br>
